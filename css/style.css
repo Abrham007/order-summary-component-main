@@ -7,18 +7,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 900px;
   background: url(../images/pattern-background-desktop.svg) hsl(225, 100%, 94%);
   font-family: "Red Hat Display", sans-serif;
 }
 h1 {
   font-size: 1.5em;
 }
-.main-p {
-  width: 80%;
-  margin: 50%;
-  text-align: center;
-}
+
 .light-text {
   color: hsl(224, 23%, 55%);
   font-weight: 500;
@@ -27,7 +23,6 @@ h1 {
 .container {
   background-color: white;
   width: 430px;
-  min-height: 600px;
   height: 700px;
   border-radius: 20px;
   text-align: center;
@@ -41,6 +36,10 @@ h1 {
 .container > * {
   margin: 25px 16px;
 }
+.main-p {
+  width: 70%;
+  margin: 25px auto;
+}
 .annual-plan {
   background-color: hsl(225, 100%, 98%);
   display: flex;
@@ -51,6 +50,7 @@ h1 {
   padding: 30px;
   margin: auto;
   border-radius: 8px;
+  min-width: 275px;
   width: 80%;
 }
 .annual-plan a {
@@ -89,8 +89,19 @@ button:hover {
 .btn2:hover {
   color: black;
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body {
+    height: 100vh;
     background: url(../images/pattern-background-mobile.svg) hsl(225, 100%, 94%);
+  }
+  .main-p {
+    font-size: 1.1rem;
+    width: 80%;
+  }
+  .container {
+    height: 600px;
+  }
+  .annual-plan {
+    padding: 10px;
   }
 }
