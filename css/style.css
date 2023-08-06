@@ -23,7 +23,6 @@ h1 {
 .container {
   background-color: white;
   width: 430px;
-  height: 700px;
   border-radius: 20px;
   text-align: center;
   margin: 20px;
@@ -99,7 +98,6 @@ button:hover {
     width: 80%;
   }
   .container {
-    height: 600px;
   }
   .annual-plan {
     padding: 10px;
